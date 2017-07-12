@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('form');
 });
 
 
@@ -28,9 +28,7 @@ Route::get('products',  'ProductController@getAllProducts');
 Route::get('product/{id}', 'ProductController@getProduct');
 
 
-// Route::post('customer', function () {
-//     return 'Hello World';
-// });
+Route::post('customer2', 'Customers@addCustomer');
 
 
 // Route::delete('customer/{id}', function () {
